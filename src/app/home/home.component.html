@@ -1,0 +1,89 @@
+<div class="navbarBody ">
+  <div class="row">
+    <div class="navbarIconLeftContainer d-flex align-items-center col-6"><img src="images/icon-navbar-left.png"
+        alt="Task Image" class="icon-image" />
+    </div>
+    <div class="col-4 navbarIconRightContainer d-flex align-items-center d-flex justify-content-end ">
+      <img src="images/icon-notifications.png" alt="Task Image" />
+      <img src="images/icon-user.png" alt="Task Image" />
+      <img src="images/icon-menu.png" alt="Task Image" />
+    </div>
+  </div>
+
+
+</div>
+<div class="col-md-12 mt-5 containers">
+  <div class="row mt-4 p-3">
+    <div class="col-md-7">
+      <div class="col-md-12 ">
+        <p class="mapTitle"> Lorem Ipsum</p>
+      </div>
+      <div class="card">
+        <div class="card-body">
+
+          <div id="map"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-5">
+      <div class="col-md-12 searchBoxPosition mb-2">
+        <div class="col-md-4 col-sm-12 searchBoxPosition">
+          <div class="searchBox">
+            <input type="text" class="searchInput" id="Kod" name="Kod" autocomplete="off" placeholder="Search"
+              maxlength="50" [(ngModel)]="searchText" (input)="onSearchChange(searchText)" required="true" />
+            <img src="images/icon-search.png" alt="Task Image" style="margin-left: auto;" class="icon-image" />
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body scrollable-container">
+          <div class="d-flex justify-content-evenly flex-wrap">
+            <!-- Kart -->
+            <div class="sensorCard col-12 col-md-6 mt-4 mb-4" *ngFor="let item of cardList; let i = index"
+              [ngClass]="{ 'highlighted-card': i === selectedPinIndex }" (click)="focusOnPin(i)">
+              <div class="row">
+                <div class="col-11 pt-1">
+                  <p class="sensorCardHeader">Sıcaklık Nem Sensörü</p>
+                  <p class="sencorCardSactionHeader">{{item.name}}</p>
+
+                </div>
+                <div class="col-1"></div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-6 d-flex align-items-center">
+                      <img src="images/icon-degree.png" alt="Task Image" class="icon-image" />
+                      <div class="sensorCardText">{{ item.temperature }} °C</div>
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                      <img src="images/icon-moisture.png" alt="Task Image" class="icon-image" />
+                      <div class="sensorCardText"> % {{ item.humidity }}</div>
+                    </div>
+                    <div class="col-12 mt-2">
+                      <div class="row">
+                        <div class="col-10 d-flex align-items-center">
+                          {{ item.date }}
+                        </div>
+                        <div class="col-2">
+                          <div class="rounded-circle bg-primary d-flex justify-content-center align-items-center"
+                            style="width: 32px; height: 32px;">
+                            <img src="images/icon-circle.png" alt="Task Image" class="icon-image" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Kart Bitişi -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

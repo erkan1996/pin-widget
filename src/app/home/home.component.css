@@ -1,0 +1,244 @@
+
+.containers{
+  padding: 3rem !important;
+}
+
+/* Telefon ekranları için media query */
+@media (max-width: 768px) {
+  .containers {
+    padding-left: 3px !important;
+    padding-right: 3px !important;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid #f2f4f9;
+  border-radius: .25rem;
+  background: #FFFFFF;
+box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+border-radius: 12px;
+}
+
+.sensorCard{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 15px 20px;
+gap: 12px;
+width: 264px;
+height: 158px;
+background: #F2F9FF;
+border-radius: 15px;
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.sensorCardHeader {
+  height: 21px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin-bottom: 4px; /* Boşluğu azaltmak için bu değeri ayarlayın */
+}
+
+.sencorCardSactionHeader {
+  height: 12px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.5);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.sensorCardText {
+  width: auto;
+  height: auto;
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  color: #000000;
+  margin-left: 8px;
+}
+
+.navbarBody {
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  height: 96px;
+  top: 0;
+  left: 0;
+  border: 1px solid #f2f4f9;
+  background: #FFFFFF;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.navbarIconLeftContainer{
+  height: 96px;
+  margin-left: 5%;
+}
+
+.navbarIconRightContainer {
+  height: 96px;
+  margin-left: 5%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.searchBoxPosition{
+  display: flex;
+  align-items: center;
+ justify-content: end;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .searchBoxPosition{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+  }
+}
+
+/* Telefon ekranları için media query */
+@media (max-width: 768px) {
+  .searchBoxPosition{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+  }
+  }
+
+.searchBox{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 16px;
+gap: 8px;
+width: 100%;
+height: 40px;
+background: #FFFFFF;
+border: 1px solid #D9D9D9;
+border-radius: 9999px;
+flex: none;
+order: 1;
+flex-grow: 1;
+}
+
+/* Telefon ekranları için media query */
+@media (max-width: 768px) {
+.searchBox{
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 12px 16px;
+gap: 8px;
+width: 100%;
+height: 40px;
+background: #FFFFFF;
+border: 1px solid #D9D9D9;
+border-radius: 9999px;
+flex: none;
+order: 1;
+flex-grow: 1;
+margin-top: 5%;
+}
+}
+
+.searchInput {
+  width: 85%;
+  border: none;
+  outline: none; /* Focus olduğunda da kenarlık çıkmaması için */
+}
+
+.mapTitle{
+  /* Title */
+
+
+
+height: 24px;
+left: 98px;
+top: 261px;
+margin-left: 5px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 100%;
+/* identical to box height, or 24px */
+
+/* black */
+color: #000000;
+
+
+}
+.scrollable-container {
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+
+/* Kaydırma çubuğunu özelleştir */
+.scrollable-container::-webkit-scrollbar {
+  width: 5px; /* Scroll genişliği */
+}
+
+.scrollable-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scroll arka plan rengi */
+}
+
+.scrollable-container::-webkit-scrollbar-thumb {
+  background: #007DFC; /* Scroll tutamaç rengi (mavi) */
+  border-radius: 39px; /* Yu
+}
+
+.scrollable-container::-webkit-scrollbar-thumb:hover {
+  background: #0056b3; /* Hover durumu için daha koyu mavi */
+}
+/* Scroll Handle */
+
+
+.highlighted-card {
+  border: 2px solid blue;
+}
+
+
+::ng-deep  .leaflet-popup-close-button {
+  display: none;
+}
+::ng-deep  .leaflet-popup-content-wrapper {
+width: 105%;
+}

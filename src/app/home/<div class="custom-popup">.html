@@ -1,0 +1,47 @@
+<div style="background: white;  font-family: Arial, sans-serif;">
+  <img src="images/icon-mark.png" alt="Konum İkonu" style="position: absolute; top: -2rem; right: -2rem; ">
+  <h2 style="margin: 0; font-size: 13px; font-weight: bold; color: #333;">Nem ve Sıcaklık Sensörü</h2>
+  <p style="margin: 5px 0 10px; font-size: 12px; color: #666;">Salon</p>
+  <div class="w-100" id="settings-${i}">
+    <div class="" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+      <div style="display: flex; align-items: center; gap: 5px;">
+        <img src="images/icon-degree.png" alt="Sıcaklık İkonu" style="width: 24px; height: 24px;">
+        <span style="font-size: 16px; font-weight: bold; color: #333;">21 °C</span>
+      </div>
+      <button class="setTemperatureButton"
+        style="flex-shrink: 0; padding: 5px 10px; font-size: 12px; color: white; border: none; border-radius: 5px; cursor: pointer; background-color: #007bff;">Sıcaklık
+        Ayarla</button>
+    </div>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+      <div style="display: flex; align-items: center; gap: 5px;">
+        <img src="images/icon-moisture.png" alt="Nem İkonu" style="width: 24px; height: 24px;">
+        <span style="font-size: 16px; font-weight: bold; color: #333;">% 34</span>
+      </div>
+      <button
+        style="flex-shrink: 0; padding: 5px 10px; font-size: 12px; color: #007bff; border: none; border-radius: 5px; cursor: pointer; background-color: #a3cfff;">Nem
+        Ayarla</button>
+    </div>
+  </div>
+  <div class="w-100" id="temperature-update-${i}" style="display: none;">
+    <div class="" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+      <div style="display: flex; align-items: center; gap: 5px;">
+        <img src="images/icon-degree.png" alt="Sıcaklık İkonu" style="width: 24px; height: 24px;">
+        <span style="font-size: 16px; font-weight: bold; color: #333;">21 °C</span>
+      </div>
+      <input style="width: 50%;" type="number" id="new-temperature-${i}" value="${randomTemp}" />
+    </div>
+    <div class="col-12">
+      <div class="row">
+        <button class="mr-2"
+          style="flex-shrink: 0; padding: 5px 10px; font-size: 12px; color: white; border: none; border-radius: 5px; cursor: pointer; background-color: #007bff;width: 40%;">
+          İptal Et</button>
+        <button class="updateHumidityButton"
+          style="flex-shrink: 0; padding: 5px 10px; font-size: 12px; color: white; border: none; border-radius: 5px; cursor: pointer; background-color: #007bff;width: 40%;">
+          Güncelle</button>
+      </div>
+
+
+    </div>
+
+  </div>
+</div>
